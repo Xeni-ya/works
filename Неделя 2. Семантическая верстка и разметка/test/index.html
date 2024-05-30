@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Тег fieldset</h3>
+
+    <form class="form">
+        <fieldset class="form__contact-info">
+            <legend class="form__contact-info_legend">Заголовок для группы</legend>
+                <!-- Элементы формы для получения данных о пользователе -->
+         </fieldset>
+         <fieldset class="form__delivery-info">
+               <legend class="form__delivery-info_legend">Заголовок для группы</legend>
+              <!-- А тут — для информации о времени и адресе доставки -->
+          </fieldset>
+  </form>
+
+  <h3>Тег input</h3>
+
+  <h3>Типы для ввода данных разных форматов:</h3>
+  <form>
+    <div>
+          <label for="name"></label>
+          <input type="text" placeholder="ФИО" id="name"/>
+   </div>
+</form>
+
+<form>
+    <div>
+          <label for="userEmail"></label>
+          <input type="email" placeholder="Электронная почта" id="userEmail"/>
+    </div>
+</form>
+
+<form>
+    <div>
+            <label for="search">Поиск:</label>
+            <input type="search" placeholder="Введите запрос" id="search" />
+      </div>
+</form>
+
+<form>
+
+    <div>
+          <label for="tel"></label>
+         <input type="tel" placeholder="+7 (xхx) xxx-xx-xx" id="tel"/>
+    </div>
+</form>
+
+<form>
+    <div>
+       <label for="website">Сайт:</label> 
+      <input type="url" placeholder="http://example.com" id="website" />
+   </div>
+</form>
+
+<form>
+    <div>
+        <label for="password">Пароль (не менее 5 знаков):</label>
+      <input
+        type="password"
+        placeholder="Пароль (не менее 5 знаков)"
+        id="password"
+        minlength="5"
+        maxlength="12"
+       />
+    </div>
+</form>
+
+<form>
+    <div>
+        <label for="age"></label>
+        <input type="number" placeholder="Возраст" max="100" id="age"/>
+   </div>
+</form>
+
+<h3>Элементы форм</h3>
+
+<form>
+    <p> Как вы относитесь к полетам в космос? </p>
+    <input type="checkbox" name="space" value="1" checked="checked"/>
+    Положительно, всегда хотел полететь в космос <br/>
+    <input type="checkbox" name="space" value="2"/>
+    Безразлично, никогда не думал об этом серьезно <br/>
+    <input type="checkbox" name="space" value="3"/>
+    Отрицательно, меня с детства отталкивают мысли о космосе <br/>
+</form>
+
+<form>
+    <fieldset>
+    Радиокнопки:
+    <label for ="ie">
+    <input type ="radio" name="browser" value="ie" id="ie">
+         Вариант 1
+     </label>
+     <label for ="opera">
+     <input type="radio" name="browser" value="opera" id="opera">
+         Вариант 2
+     </label>
+    <label for ="firefox">
+    <input type ="radio" name="browser" value="firefox" id="firefox">
+         Вариант 3
+     </label>
+   </fieldset>
+</form>
+
+<form>
+    <div>
+         <label for="avatar">Выберите фотографию:</label>
+         <input type="file" id="avatar" name="avatar"/>
+    </div>
+</form>
+
+<h2>Типы для различных кнопок</h2>
+
+<form>
+    <div>
+        <input type="reset" value="Очистить">
+        <input type="submit" value="Отправить">
+    </div>
+</form>
+
+<h3>Тег textarea</h3>
+
+<label for="comment">
+    Большое текстовое поле:
+    <textarea name="comment" cols="40" rows="3"></textarea>
+</label>
+
+    <h3>Элемент select</h3>
+
+    <form>
+        <label for="city-select">Ваш город</label>
+        <select name="city" id="city-select">
+              <option value="">-- Выберите город --</option>
+             <option value="petersburg">Санкт-Петербург</option>
+             <option value="samara">Самара</option>
+             <option value="perm">Пермь</option>
+             <option value="novosibirsk">Новосибирск</option>
+        </select>
+    </form>
+    <option value="novosibirsk" selected="selected">Новосибирск</option>
+
+    <h3>Кнопка button</h3>
+
+    <form>
+        <button type="submit">...</button>
+   </form>
+   
+   <form>
+         <button type="button">...</button>
+   </form>
+
+   <h3>Элемент label</h3>
+
+<label for="yourName">Ваше имя</label>
+<input type="text" id="yourName" />
+
+<h2>Навигация по полям</h2>
+
+<form>
+
+    <fieldset>
+         <legend accesskey="N" tabindex="0">Имя</legend>
+         <p>Имя <input type="text" name="firstName" accesskey="F" tabindex="1"/></p>
+    </fieldset>
+    <fieldset>
+           <legend accesskey="A" tabindex="2">Адрес</legend>
+           <p>Адрес <textarea name="address" accesskey="T" tabindex="3"></textarea></p>
+      </fieldset>
+</form>
+
+    <h1>Опросник для владельцев животных</h1>
+    <form method="post">
+    <label for="pet-name">Кличка животного:</label>
+    <input type="text" id="pet-name" name="pet-name" required>
+    <br/>
+
+    <label for="pet-type">Вид животного:</label>
+    <select id="pet-type" name="pet-type" required>
+      <option value="">Выберите</option>
+      <option value="dog">Собака</option>
+      <option value="cat">Кошка</option>
+      <option value="bird">Птица</option>
+      <option value="fish">Рыба</option>
+      <option value="other">Другое</option>
+    </select>
+    <br/>
+    
+    <label for="pet-breed">Порода (если применимо):</label>
+    <input type="text" id="pet-breed" name="pet-breed">
+    <br/>
+    
+    <label for="pet-age">Возраст:</label>
+    <input type="number" id="pet-age" name="pet-age" min="0" max="30" required>
+    <br/>
+    
+    <label>Пол:</label>
+    <input type="radio" id="pet-gender-male" name="pet-gender" value="male" required>
+    <label for="pet-gender-male">Мужской</label>
+    <input type="radio" id="pet-gender-female" name="pet-gender" value="female" required>
+    <label for="pet-gender-female">Женский</label>
+    <br/>  
+    
+    <label for="pet-vet">Ветеринар:</label>
+    <input type="text" id="pet-vet" name="pet-vet">
+    <br/>
+    
+    <label for="owner-name">Имя владельца:</label>
+    <input type="text" id="owner-name" name="owner-name" required>
+    <br/>
+    
+    <label for="owner-email">Адрес электронной почты:</label>
+    <input type="email" id="owner-email" name="owner-email" required>
+    <br/>
+    
+    <label for="owner-phone">Номер телефона:</label>
+    <input type="tel" id="owner-phone" name="owner-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <br/>
+
+    <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

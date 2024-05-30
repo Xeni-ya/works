@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('Roboto-Bold.woff2') format('woff2');
+    src: url('Roboto-Regular.woff2') format('woff2');
+}
+
+body {
+    max-width: 1440px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background-color: #dedede;
+}
+
+a:link {
+    text-decoration: none;
+    color:#212A2F;
+}
+
+a:visited {
+    color: #808080;
+}
+
+a:hover {
+    color: #6b582e;
+}
+
+a:active {
+    color: #212f24;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    
+}
+
+.navbar {
+    display: flex;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 20px;
+}
+
+.storeLogo {
+    width:120px; 
+    height:38px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button img {
+    width: 30px;
+}
+
+.main__section {
+    position: relative;
+}
+
+.text__overlay {
+    position: absolute;
+    padding: 50px;
+    bottom: 50px;
+    color: white;
+}
+
+.text__overlay h1 {
+    margin: 0;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    font-size: 48px;
+}
+
+.text__overlay button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+

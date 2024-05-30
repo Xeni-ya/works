@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    display: flex; /* контейнер для выравнивания элементов */
+    align-items: center; /* выравнивание элементов по вертикали */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 800px; 
+    padding: 15px;
+    margin: auto;
+}
+
+.logo img {
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+nav ul li {
+    float: left;
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.main__section_imgOne {
+    max-width: 52%;
+}
+
+.section_services, button {
+    margin: 10px;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+.main__section_imgTow, .main__section_imgTree{
+    max-width: 23%;
+}
+
+.main__section_imgFour, .main__section_imgFive, .main__section_imgSix {
+    max-width: 100%;
+    display: block;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}

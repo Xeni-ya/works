@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник для обладателей магических животных</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Кличка питомца (текстовое поле)
+    Имя и контакты владельца (текстовые поля)
+    Порода питомца (выпадающий список пород)
+    Чем питается (группа галочек, можно выбрать несколько): сухой корм, влажный корм, натуральный корм
+    Самец или самка (группа радиокнопок, можно выбрать одну)
+    Комментарий владельца (большое текстовое поле)
+    Приложить фото питомца (можно выбрать файл с диска)
+    Кнопка "Сохранить" -->
+    
+    <div class="container">
+        <form method="post">
+            <h1>Опросник для владельцев животных</h1>
+
+            <div>
+                <label for="pet-name">Кличка питомца:</label>
+                <br>
+                <input type="text" name="pet-name" id="pet-name" autofocus/>
+            </div>
+
+            <br/>
+
+            <div>
+                <fieldset class="form__contact-info">
+                    <legend class="form__contact-info_legend">Имя и контакты владельца</legend>
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="ФИО"/>
+                    </div>
+                    <div>
+                        <label for="tel"></label>
+                        <input type="tel" placeholder="+7 (xхx) xxx-xx-xx" name="tel" id="tel"/>
+                    </div>
+                    <div>
+                        <label for="userEmail"></label>
+                        <input type="email" placeholder="Электронная почта" name="userEmail" id="userEmail"/>
+                    </div>
+                </fieldset>
+            </div>
+
+            <br/>
+
+            <div>
+                <label for="pet-breed">Порода питомца:</label>
+                <br/>
+                <select name="pet-breed" id="pet-breed">
+                    <option value="">Выберите</option>
+                    <option value="">Сиамская</option>
+                    <option value="">Персидская</option>
+                    <option value="">Мейн-кун</option>
+                    <option value="">Сфинкс</option>
+                    <option value="">Британская короткошерстная</option>
+                    <option value="">Другое</option>
+                </select>
+            </div>
+
+            <br/>
+
+            <div>
+                <p>Чем питается?</p>
+                <input type="checkbox" name="space" value="1" checked="checked"/>
+                сухой корм <br/>
+                <input type="checkbox" name="space" value="2"/>влажный корм <br/>
+                <input type="checkbox" name="space" value="3"/>натуральный корм <br/>
+            </div>
+
+            <br/>
+
+            <div>
+                <label>Пол:</label>
+                <input type="radio" id="pet-gender-male" name="pet-gender" value="male" required/>
+                <label for="pet-gender-male">Мужской</label>
+                <input type="radio" id="pet-gender-female" name="pet-gender" value="female" required/>
+                <label for="pet-gender-female">Женский</label>
+            </div>
+
+            <br/>
+
+            <div>
+                <label for="comment">
+                    Комментарий владельца: 
+                    <br/>
+                    <textarea name="comment" id="comment" cols="40" rows="3"></textarea>
+                </label>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="avatar">Приложить фото питомца:</label>
+                <input type="file" id="avatar" name="avatar"/>
+            </div>
+            
+            <br>
+            
+            <div>
+                <input type="submit" value="Сохранить">
+            </div>
+        
+    </form>
+    </div>
+</body>
+</html>

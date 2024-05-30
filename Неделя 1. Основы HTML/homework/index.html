@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" 
+    href="https://ltdfoto.ru/images/2024/05/05/photo_2024-05-04_21-58-46.jpg" 
+    type="image/png">
+    <title>Страница о себе</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    }
+
+    .container {
+    width: 100%;
+    max-width: 1200px; 
+    padding: 15px;
+    margin: auto;
+    height: 100%;
+    }
+
+    .main__tittle {
+    font-style: 32px;
+    line-height: 36px;
+    font-weight: 600;
+    margin: 60px;
+    text-align: center;
+    }
+    
+    .main__text {
+    font-style: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    }
+
+    .main__img {
+    width: 100%;
+    }
+
+    .aboutMe {
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    }
+
+    .aboutMe__tittle {
+    font-style: 36px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 60px 30px;
+    text-align: center;
+    }
+
+    .aboutMe__text {
+    width: 550px;
+    height: auto;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    top: 110px;
+    }
+
+    .aboutMe__img img {
+    width: 400px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    top: -175px;
+    left: 600px;
+    }
+
+    .myQualities__tittle {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 60px 60px;
+    text-align: center;
+}
+
+    .myQualities__tittle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 6px; 
+    right: 6px; 
+    width: 100px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #2980b9;
+}
+
+footer {
+    background-color:  #0d0d0d;
+    padding: 60px 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer__thecopyrightsign {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 15px 15px;
+
+}
+
+.footer__phone a {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration:none;
+}
+
+.footer__phone {
+    display: inline-block;
+    margin: 0 5px 15px 0; 
+    padding: 10px 0;
+    width: 150px;
+}
+
+.footer__mail a{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration:none; 
+}
+
+.footer__mail { 
+    display: inline-block; 
+    margin: 0 5px 15px 0; 
+    padding: 10px 0; 
+    width: 150px;
+}
+</style>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="main__tittle">Привет!<br> Меня зовут Ксюша Будюгина</h1>
+            <img src="https://sun9-76.userapi.com/impg/19_vi2imadBCljRBR-wCVVBs0As2oZieEg6lEQ/gMCJyIh9TxU.jpg?size=2560x1703&quality=95&sign=5b1dfcb2e6574e3a8097bb435de3dccc&type=album" alt="picture" class="main__img">
+        </div>
+        <section class="aboutMe">
+            <div class="container">
+                <div>
+                    <h2 class="aboutMe__tittle">Обо мне</h2>
+                    <p class="aboutMe__text">Я из города Тверь.
+                        <br>
+                        Решила обучаться Frontend-разработке, потому что мне давно нравится это направление, и я хотела этому обучиться. 
+                        По специальности я экономист, и я намерена сменить специальность на ту, которая мне нравится. </p>
+                </div>
+                <div class="aboutMe__img">
+                    <img src="https://sun9-75.userapi.com/impg/qyFtcjs_JiWJTbRVAQIvExy-S0ukenu2M7wF6w/z2X8adf8zw0.jpg?size=2122x2160&quality=95&sign=01df20bf463fae453bba3b412aae6616&type=album" alt="picture">
+                </div>
+            </div>
+        </section>
+        <section class="myQualities">
+            <div class="container">
+                <h1 class="myQualities__tittle">Мои качества</h1>
+                <h2>Что я умею</h2>
+                <ul>
+                    <li>Общаться с людьми</li>
+                    <li>Готовить</li>
+                    <li>Водить машину</li>
+                    <li>Разводить костер</li>
+                </ul>
+                <h2>Что я люблю</h2>
+                <ul>
+                    <li>Готовить</li>
+                    <li>Разбираться в коде</li>
+                    <li>Слушать музыку</li>
+                    <li>Рисовать акварелью</li>
+                    <li>Расписывать миниатюры</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer__thecopyrightsign">
+                © 2024
+            </div>
+            <div class="footer__phone">
+                <a href="#">+7(904)003-03-96</a>
+            </div>
+            <div class = 'vr'></div>
+            <div class="footer__mail">
+                <a href="#">bac1kspace@mail.ru</a> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
